@@ -5,7 +5,7 @@ class PdoCtf
      * Propriétés privées de la classe PdoCtf pour les phases de tests
      */
     private static $serveur = 'mysql:host=localhost';
-    private static $bdd = 'dbname=hackathon_victor';
+    private static $bdd = 'dbname=hackathon_v2';
     private static $user = 'root';
     private static $mdp = '';
     private static $monPdo;
@@ -47,9 +47,9 @@ class PdoCtf
      */
     public function getInfosEquipe($login, $mdp)
     {
-        $req = "SELECT id, libelle, login  
+        $req = "SELECT equipeID, libelle, login  
                     FROM equipe 
-                    WHERE login=:login AND mdp=SHA2(:mdp, 512);";
+                    WHERE login=:login AND motDePasse=SHA2(:mdp, 512);";
         $req = PdoCtf::$monPdo->prepare($req);
         $req->execute([':login' => $login, ':mdp' => $mdp]);
         $ligne = $req->fetch();
@@ -124,9 +124,24 @@ class PdoCtf
     public function getEnigmes()
     {
         // tout sauf le mot de passe et le flag
-        $req = "SELECT numero, libelle, url, categorie, thematique, contenu, nbPoints 
-                    FROM challenge 
-                    ORDER BY numero;";
+        $req = "SELECT numEnigme, libelle, url, niveau, thematique, contenu, nbPoints 
+                    FROM enigme 
+                    where numEnigme IN (SELECT noEnigme from concerner where noSession = 1) 
+                    AND numEnigme NOT IN (SELECT noEnigme from validation where idEquipe = 1)
+                    ORDER BY numEnigme;";
+        $rs = PdoCtf::$monPdo->query($req);
+        $lignes = $rs->fetchAll();
+        return $lignes;
+    }
+
+    public function getEnigmesNonResolue()
+    {
+        // tout sauf le mot de passe et le flag
+        $req = "SELECT numEnigme, libelle, url, niveau, thematique, contenu, nbPoints 
+                    FROM enigme 
+                    where numEnigme IN (SELECT noEnigme from concerner where noSession = 1) 
+                    AND numEnigme IN (SELECT noEnigme from validation where idEquipe = 1)
+                    ORDER BY numEnigme;";
         $rs = PdoCtf::$monPdo->query($req);
         $lignes = $rs->fetchAll();
         return $lignes;
@@ -134,7 +149,7 @@ class PdoCtf
 
     public function getIdEquipe($login)
     {
-        $req = "SELECT id
+        $req = "SELECT equipeID as id
                 FROM equipe
                 WHERE login=:login;";
         $req = PdoCtf::$monPdo->prepare($req);
@@ -145,9 +160,9 @@ class PdoCtf
 
     public function getUneEnigme($numChallenge)
     {
-        $req = "SELECT numero, libelle, url, categorie, thematique, contenu, nbPoints , difficulte
-                FROM challenge 
-                WHERE numero=:numero;";
+        $req = "SELECT numEnigme, libelle, url, niveau, thematique, contenu, nbPoints , difficulte
+                FROM enigme 
+                WHERE numEnigme=:numero;";
         $req = PdoCtf::$monPdo->prepare($req);
         $req->execute([':numero' => $numChallenge]);
         $ligne = $req->fetch();
@@ -165,5 +180,13 @@ class PdoCtf
         $req->execute([':idEquipe' => $idEquipe]);
         $ligne = $req->fetch();
         return $ligne['numPartie'];
+    }
+
+    public function getNiveau(){
+        $req = "SELECT  DISTINCT(niveau)
+        FROM enigme;";
+        $rs = PdoCtf::$monPdo->query($req);
+        $lignes = $rs->fetchAll();
+        return $lignes;
     }
 }

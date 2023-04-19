@@ -16,7 +16,6 @@
     $_REQUEST['uc'] = 'connexion';
   }
   $uc = $_REQUEST['uc'];
-  echo $uc;
   switch ($uc) {
     case 'connexion': {
       include("controleur/c_connexion.php");

@@ -79,9 +79,9 @@
                         }
                         body += '<tr style="background-color:' + color + ';font-size:25px" >';
                         body += '<td > #' + (i + 1) + '</td>';
-                        body += '<td>' + response.partie[i].libelle + '</td>';
+                        body += '<td>' + response.partie[i].equipe + '</td>';
                         body += '<td>' + image + '</td>';
-                        body += '<td>' + response.partie[i].scoreTotal + '</td>';
+                        body += '<td>' + response.partie[i].score + '</td>';
                         body += '</tr>';
                     }
                     $('.tabScore').append(body);

@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- <link rel="stylesheet" href="styles/stylesIndex.css"> -->
-  <link rel="stylesheet" href="styles/stylesEnigmes.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- <link rel="stylesheet" href="styles/stylesEnigmes.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
   <script src="node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
   <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.css">
   <script src="node_modules/jquery/dist/jquery.js"></script>
@@ -37,4 +39,4 @@
   <title>HACKATHON 2022</title>
 </head>
 
-<body>
+<body class="bg-gray-600">

@@ -1,24 +1,31 @@
-<div class="droit">
-    <h1 class="repondre"></h1>
-    <div class="repondreboite">
-        <p class="message">
-        <pre>
-                <!-- le nombre de fois  ou l’on peut obtenir 974 avec les resultat de la division de 2056 par 3 ou 6 ou 9.
-                Auteur : 
-                Olivier sicard (olivier.sicard@mail.com) -->
-                 <h1><?php echo $enigme['libelle'] ?></h1>
+
+
+<div class="w-full pl-4 bg-gray-800">
+         
+         <div class="w-full h-full  bg-green-500">
+             <div class="bg-gray-900 p-4">
+                 <p class="text-2xl text-white">Enigmes</p>
+             </div>
+             <div class="bg-indigo-500 grid grid-cols-1 h-96 overflow-y-auto p-4">
+             <h1><?php echo $enigme['libelle'] ?></h1>
                  <h2>url : <?php echo $enigme['url'] ?></h2>
-                    <h2>catégorie : <?php echo $enigme['categorie'] ?></h2>
+                    <h2>catégorie : <?php echo $enigme['niveau'] ?></h2>
                     <h2>thématique : <?php echo $enigme['thematique'] ?></h2>
                     <h2> difficulté : <?php echo $enigme['difficulte'] ?></h2>
                     <h2>contenu : <?php echo $enigme['contenu'] ?></h2>
+                    <button class="btnTestFlag bg-red-500 rounded-md hover:shadow-lg m-4" dt-idPartie="<?php echo 1; ?>" dt-idEquipe="<?php echo $idEquipe ?>" dt-numChallenge="<?php echo $enigme['numEnigme'] ?>">Tester le flag</button>
 
-            </pre>
-        </p>
-    </div>
-    <button class="btnTestFlag" dt-idPartie="<?php echo 1; ?>" dt-idEquipe="<?php echo $idEquipe ?>" dt-numChallenge="<?php echo $enigme['numero'] ?>">Tester le flag</button>
-</div>
-</div>
+            </div>
+         </div>
+         
+     </div>
+     
+     
+ </div>
+
+
+
+
 
 <script>
     $(document).ready(function() {
