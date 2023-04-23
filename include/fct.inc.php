@@ -67,14 +67,4 @@ function nbErreurs()
     }
 }
 
-/**
-         * Retourne vrai si l'équipe a déjà résolu l'énigme (idEnigme et idEquipe existe dans la table concerner)
-         * @param $idChallenge, $idEquipe
-         * @return vrai ou faux
-         */
-    // function estResolu($idChallenge, $idEquipe){
-    //     global $pdo;
-    //     return $pdo->estResolu($idChallenge, $idEquipe);
-    
-    //     }
 

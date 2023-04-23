@@ -1,8 +1,32 @@
 <?php
 
+
+
 switch ($_REQUEST['action']) {
+    case 'choixPartie':{
+        $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '');
+        $sql = "SELECT Distinct numSession,  dateDebut, dateFin FROM session group by numSession;";
+        $res = $pdo->query($sql);
+        $lignes = $res->fetchAll();
+        $partie = json_encode(['session' => $lignes]);
+        echo $partie;
+        break;
+    }
+    case 'getEquipeByPartie': {
+            $numSession = $_REQUEST['numSession'];
+            $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '');
+            $sql = "SELECT equipeID, libelle, login FROM equipe WHERE equipe.equipeID in (Select idEquipe from session where numSession = :numSession);";
+            $sql = $pdo->prepare($sql);
+            $res = $sql->execute(['numSession' => $numSession]);
+            $lignes = $sql->fetchAll();
+            $partie = json_encode(['equipe' => $lignes]);
+            echo $partie;
+            break;
+        }
+
     case 'tabScore': {
 
+            $numSession = $_REQUEST['numSession'];
             $date1 = new DateTime('now', new DateTimeZone('Indian/Reunion'));
             $date2 = new DateTime('2022-11-16 17:30:00', new DateTimeZone('Indian/Reunion'));
             $interval = $date1->diff($date2);
@@ -10,10 +34,12 @@ switch ($_REQUEST['action']) {
 
             $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '');
 
-            $sql = "select  * from infotabscore order by score DESC;";
-            $res = $pdo->query($sql);
-            $lignes = $res->fetchAll();
-            $i = 1;
+            $sql = "select  * from infotabscore where numSession = :numSession order by score DESC;";
+            // requete préparée
+            $sql = $pdo->prepare($sql);
+            $res = $sql->execute(['numSession' => $numSession]);
+            $lignes = $sql->fetchAll();
+            
 
             $partie = json_encode(['partie' => $lignes, 'minuteur' => ['time' => $minuteur]]);
             echo $partie;

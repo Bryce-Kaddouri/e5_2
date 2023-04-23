@@ -183,10 +183,43 @@ class PdoCtf
     }
 
     public function getNiveau(){
-        $req = "SELECT  DISTINCT(niveau)
-        FROM enigme;";
+        $req = "SELECT  DISTINCT(difficulte), categorie.libelle, icone
+        FROM enigme inner join categorie on numCateg = difficulte;";
         $rs = PdoCtf::$monPdo->query($req);
         $lignes = $rs->fetchAll();
         return $lignes;
+    }
+
+    public function writeLog($idEquipe, $action, $ip)
+    {
+        // verif int $idEquipe
+        // verif string $action
+        // verif regex $ip
+        if(!is_int($idEquipe)){
+            throw new Exception("idEquipe n'est pas un entier");
+        }
+        if(!is_string($action)){
+            throw new Exception("action n'est pas une chaine de caractère");
+        }
+        // // contient 3x une chaine avec ce format : "[0-9][0-9]?[0-9]?."
+        // // et finit par une chaine avec ce format : "[0-9][0-9]?[0-9]?"
+        // // ex : 127.0.0.1
+        // if(!preg_match("/^([0-9]{1,3}\.){3}[0-9]{1,3}$/", $ip)){
+        //     throw new Exception("ip n'est pas une adresse ip");
+        // }
+
+
+        $sql = "call writeLogs(:idEquipe, :action, :ip);";
+        // echo "writeLogs(1, ".$action.", ".$ip.");";
+        $req = PdoCtf::$monPdo->prepare($sql);
+        $req->bindParam(':idEquipe', $idEquipe, PDO::PARAM_INT);
+        $req->bindParam(':action', $action, PDO::PARAM_STR);
+        $req->bindParam(':ip', $ip, PDO::PARAM_STR);
+        $req->execute();
+        
+
+        return true;
+
+
     }
 }

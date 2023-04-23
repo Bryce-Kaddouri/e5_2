@@ -3,10 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 19 avr. 2023 à 02:36
+-- Généré le : dim. 23 avr. 2023 à 18:04
 -- Version du serveur : 5.7.36
 -- Version de PHP : 8.1.0
 
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,8 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `hackathon_v2`
 --
-CREATE DATABASE IF NOT EXISTS `hackathon_v2` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE hackathon_v2;
+
+DELIMITER $$
+--
+-- Procédures
+--
+
+DROP PROCEDURE IF EXISTS `writeLogs`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `writeLogs` (`idEquipe` INT, `action` VARCHAR(255), `ip` VARCHAR(255))  BEGIN
+	DECLARE v_ligne SMALLINT;
+	
+
+	SELECT count(*) 
+		INTO v_ligne FROM historique where  idEquipe = idEquipe & createdAt = now();
+		
+
+		
+	INSERT INTO historique (numLigne, createdAt, idEquipe, ip, action) VALUES (v_ligne, NOW(), idEquipe, ip, action);
+		
+END$$
+
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -34,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `categorie` (
   `libelle` varchar(128) DEFAULT NULL,
   `icone` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`numCateg`)
-) ;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `categorie`
@@ -58,7 +78,7 @@ CREATE TABLE IF NOT EXISTS `concerner` (
   `noSession` smallint(6) NOT NULL,
   PRIMARY KEY (`noEnigme`,`noSession`),
   KEY `FK_Concerner_Session` (`noSession`)
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `concerner`
@@ -80,7 +100,8 @@ INSERT INTO `concerner` (`noEnigme`, `noSession`) VALUES
 (13, 1),
 (14, 1),
 (15, 1),
-(16, 1);
+(16, 1),
+(16, 2);
 
 -- --------------------------------------------------------
 
@@ -98,7 +119,7 @@ CREATE TABLE IF NOT EXISTS `eleve` (
   `idEquipe` smallint(6) NOT NULL,
   PRIMARY KEY (`eleveID`),
   KEY `FK_Eleve` (`idEquipe`)
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -122,7 +143,7 @@ CREATE TABLE IF NOT EXISTS `enigme` (
   `noCategorie` smallint(6) NOT NULL,
   PRIMARY KEY (`numEnigme`),
   KEY `FK_Enigme` (`noCategorie`)
-) ;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `enigme`
@@ -135,9 +156,9 @@ INSERT INTO `enigme` (`numEnigme`, `libelle`, `url`, `flag`, `difficulte`, `nbPo
 (4, 'Enigme 4', 'http://challenge4.com', '$2y$10$1fmA4Hpg6fvw6/ZuSq.UJeFRYm1VT5v5AgYnJTf8TuGc8PFoxtl6W', 2, 40, 'SIO', 'Thematique 4', 'Contenu 4', 'Auteur 4', 'auteur4.mail.com', 3),
 (5, 'Enigme 5', 'http://challenge5.com', '$2y$10$ueqBozanpHQhoDsvY7smB.RyWCc6y6NYX2eacPCiQtLO1knxbnJIC', 1, 10, 'TNSI', 'Thematique 5', 'Contenu 5', 'Auteur 5', 'auteur5.mail.com', 1),
 (6, 'Enigme 6', 'http://challenge6.com', '$2y$10$q1eGYPzkkhTvOrp7nmSRW.fLivTLuDYRNQPoGDoExWH2EfuRIIuUq', 2, 20, 'SIO', 'Thematique 6', 'Contenu 6', 'Auteur 6', 'auteur6.mail.com', 3),
-(7, 'Enigme 7', 'http://challenge7.com', '$2y$10$Ts.YrxPc3ohmy4IbtimUfeStw6eEbjvn2tsDlLxq3VGsC6cA1Xuty', 1, 30, '1NSI', 'Thematique 7', 'Contenu 7', 'Auteur 7', 'auteur7.mail.com', 2),
+(7, 'Enigme 7', 'http://challenge7.com', '$2y$10$Ts.YrxPc3ohmy4IbtimUfeStw6eEbjvn2tsDlLxq3VGsC6cA1Xuty', 3, 30, '1NSI', 'Thematique 7', 'Contenu 7', 'Auteur 7', 'auteur7.mail.com', 2),
 (8, 'Enigme 8', 'http://challenge8.com', '$2y$10$hCgEnAlLp/GAGv6mnIJzB.Nei.zzBQFDq9Y1vs3f4nhpPlLMd18sa', 2, 40, 'SIO', 'Thematique 8', 'Contenu 8', 'Auteur 8', 'auteur8.mail.com', 2),
-(9, 'Enigme 9', 'http://challenge9.com', '$2y$10$9z3oErSsdv2dTNnjKZ4cOutipiMt4kSUok/8J60TC3QmqOCAqPX2e', 1, 10, 'TNSI', 'Thematique 9', 'Contenu 9', 'Auteur 9', 'auteur9.mail.com', 4),
+(9, 'Enigme 9', 'http://challenge9.com', '$2y$10$9z3oErSsdv2dTNnjKZ4cOutipiMt4kSUok/8J60TC3QmqOCAqPX2e', 4, 10, 'TNSI', 'Thematique 9', 'Contenu 9', 'Auteur 9', 'auteur9.mail.com', 4),
 (10, 'Enigme 10', 'http://challenge10.com', '$2y$10$pH1YD87VWsijiCvKbAxAFOZVzD.MjX3ibHx.KDissaUaPiS0VyUcC', 2, 20, 'SIO', 'Thematique 10', 'Contenu 10', 'Auteur 10', 'auteur10.mail.com', 1),
 (11, 'Enigme 11', 'http://challenge11.com', '$2y$10$lwtqyLyahbMWEGXYW7IF4.7LHNOv9UzLCf027zx/5aERBQm7f6Pvm', 1, 30, '1NSI', 'Thematique 11', 'Contenu 11', 'Auteur 11', 'auteur11.mail.com', 4),
 (12, 'Enigme 12', 'http://challenge12.com', '$2y$10$1/RPXrPV4M1/irocLfgZ6OGAlXshc2HA34XIZhTwxX6OIS2adWl2i', 2, 40, 'TNSI', 'Thematique 12', 'Contenu 12', 'Auteur 12', 'auteur12.mail.com', 3),
@@ -161,7 +182,7 @@ CREATE TABLE IF NOT EXISTS `equipe` (
   `scoreTotal` int(4) DEFAULT NULL,
   `visiteur` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`equipeID`)
-) ;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `equipe`
@@ -173,13 +194,34 @@ INSERT INTO `equipe` (`equipeID`, `libelle`, `login`, `motDePasse`, `scoreTotal`
 (3, 'Team Forest', 'teamforest', 'df6b9fb15cfdbb7527be5a8a6e39f39e572c8ddb943fbc79a943438e9d3d85ebfc2ccf9e0eccd9346026c0b6876e0e01556fe56f135582c05fbdbb505d46755a', 0, 0),
 (4, 'Team 42', 'team42', '39ca7ce9ecc69f696bf7d20bb23dd1521b641f806cc7a6b724aaa6cdbffb3a023ff98ae73225156b2c6c9ceddbfc16f5453e8fa49fc10e5d96a3885546a46ef4', 0, 1);
 
-
-
 -- --------------------------------------------------------
 
 --
--- Structure de la table `parametres`
+-- Structure de la table `historique`
 --
+
+DROP TABLE IF EXISTS `historique`;
+CREATE TABLE IF NOT EXISTS `historique` (
+  `numLigne` int(11) NOT NULL,
+  `idEquipe` int(11) NOT NULL,
+  `createdAt` datetime NOT NULL,
+  `action` varchar(255) NOT NULL,
+  `ip` varchar(255) NOT NULL,
+  PRIMARY KEY (`numLigne`,`idEquipe`,`createdAt`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `historique`
+--
+
+INSERT INTO `historique` (`numLigne`, `idEquipe`, `createdAt`, `action`, `ip`) VALUES
+(0, 0, '2023-04-23 21:14:22', 'Test de connexion : Connexion écouhée', '127.0.0.1'),
+(0, 0, '2023-04-23 21:14:52', 'Test de connexion : Connexion écouhée', '127.0.0.1'),
+(0, 1, '2023-04-22 21:16:05', 'login', '127.0.0.1'),
+(0, 1, '2023-04-23 21:13:03', 'Test de connexion : Connexion réussie', '127.0.0.1'),
+(0, 1, '2023-04-23 21:15:45', 'Test de connexion : Connexion réussie', '127.0.0.1');
+
+-- --------------------------------------------------------
 
 DROP TABLE IF EXISTS `parametres`;
 CREATE TABLE IF NOT EXISTS `parametres` (
@@ -187,7 +229,7 @@ CREATE TABLE IF NOT EXISTS `parametres` (
   `nomEvenement` varchar(128) DEFAULT NULL,
   `nomEtablissement` varchar(128) DEFAULT NULL,
   PRIMARY KEY (`paramID`)
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -201,9 +243,9 @@ CREATE TABLE IF NOT EXISTS `session` (
   `dateDebut` datetime DEFAULT NULL,
   `dateFin` datetime DEFAULT NULL,
   `idEquipe` smallint(6) NOT NULL,
-  PRIMARY KEY (`numSession`,`idEquipe`),
+  PRIMARY KEY (`numSession`,`idEquipe`) USING BTREE,
   KEY `FK_Session` (`idEquipe`)
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `session`
@@ -211,7 +253,8 @@ CREATE TABLE IF NOT EXISTS `session` (
 
 INSERT INTO `session` (`numSession`, `dateDebut`, `dateFin`, `idEquipe`) VALUES
 (1, '2022-12-18 15:43:16', '2022-12-18 23:00:00', 1),
-(1, '2022-12-18 15:43:16', '2022-12-18 23:00:00', 2);
+(1, '2022-12-18 15:43:16', '2022-12-18 23:00:00', 2),
+(2, '2023-04-20 12:02:55', '2023-04-20 12:02:55', 1);
 
 -- --------------------------------------------------------
 
@@ -223,19 +266,21 @@ DROP TABLE IF EXISTS `validation`;
 CREATE TABLE IF NOT EXISTS `validation` (
   `idEquipe` smallint(6) NOT NULL,
   `noEnigme` smallint(6) NOT NULL,
+  `numSession` int(11) NOT NULL,
   PRIMARY KEY (`idEquipe`,`noEnigme`),
   KEY `FK_Validation_Enigme` (`noEnigme`)
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `validation`
 --
 
-INSERT INTO `validation` (`idEquipe`, `noEnigme`) VALUES
-(1, 1),
-(1, 2),
-(1, 3),
-(1, 6);
+INSERT INTO `validation` (`idEquipe`, `noEnigme`, `numSession`) VALUES
+(1, 1, 1),
+(1, 2, 1),
+(1, 3, 1),
+(1, 6, 1),
+(2, 4, 1);
 
 -- --------------------------------------------------------
 
@@ -245,7 +290,7 @@ INSERT INTO `validation` (`idEquipe`, `noEnigme`) VALUES
 DROP TABLE IF EXISTS `infotabscore`;
 
 DROP VIEW IF EXISTS `infotabscore`;
-CREATE VIEW `infotabscore`  AS SELECT `e`.`libelle` AS `equipe`, coalesce(sum(`en`.`nbPoints`),0) AS `score` FROM (((`equipe` `e` left join `session` `s` on((`e`.`equipeID` = `s`.`idEquipe`))) left join `validation` `v` on((`s`.`idEquipe` = `v`.`idEquipe`))) left join `enigme` `en` on((`v`.`noEnigme` = `en`.`numEnigme`))) GROUP BY `e`.`equipeID` ;
+CREATE VIEW `infotabscore`  AS SELECT `session`.`dateDebut` AS `dateDebut`, `session`.`dateFin` AS `dateFin`, `session`.`numSession` AS `numSession`, sum(`enigme`.`nbPoints`) AS `score`, `session`.`idEquipe` AS `idEquipe`, `equipe`.`login` AS `login` FROM (((`session` join `equipe` on((`equipe`.`equipeID` = `session`.`idEquipe`))) join `validation` on((`validation`.`idEquipe` = `equipe`.`equipeID`))) join `enigme` on((`enigme`.`numEnigme` = `validation`.`noEnigme`))) GROUP BY `session`.`numSession`, `session`.`idEquipe` ;
 
 --
 -- Contraintes pour les tables déchargées

@@ -24,9 +24,15 @@ switch ($action) {
             }
 
             $equipe = $pdo->getInfosEquipe($login, $mdp);
-            echo $equipe;
+            $ip = $_SERVER['REMOTE_ADDR'];
+            if($ip == '::1'){
+                $ip = '127.0.0.1';
+            }
+
         ;
             if (!is_array($equipe)) {
+                // ip de l'utilisateur
+                $pdo->writeLog(0, 'Test de connexion : Connexion écouhée', $ip);
                 ajouterErreur("Login ou mot de   passe incorrect");
                 include("vues/v_erreurs.php");
                 include("vues/v_connexion.php");
@@ -34,6 +40,7 @@ switch ($action) {
             } else {
                 $id = $equipe['equipeID'];
                 $nom = $equipe['login'];
+                $pdo->writeLog($id, 'Test de connexion : Connexion réussie', $ip);
                 connecter($id, $nom);
                 // $_SESSION['idPartie'] = $pdo->getIdPartie();
                 header('Location: index.php?uc=enigme&action=afficherEnigmes');

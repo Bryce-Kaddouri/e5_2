@@ -1,3 +1,12 @@
+<?php 
+if (!isset($_REQUEST['numSession'])  || empty($_REQUEST['numSession'])) {
+    header('Location: choixPartie.php');
+    exit();
+} else {
+    $numSession = $_REQUEST['numSession'];
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,16 +15,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/stylesScore.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Tableau des scores</title>
 </head>
 
-<body style="background-color:rgba(52, 57, 111, 0.909);">
-    <div style="margin:50px;text-align:center;font-size:40px;font-weight:bold;color:white;">
-        <h1>Tableau des scores</h1>
+<body style="background-color:rgba(52, 57, 111, 0.909);" class="mx-4 w-auto my-4 ">
+<input type="text" id="numSession" hidden value="<?php echo $numSession;?>">
+    <div class="w-full bg-red-500 mb-4 mx-auto ">
+        <h1 class="text-2xl md:text-4xl lg:text-6xl py-4 text-center">Tableau des scores</h1>
     </div>
-    <div style="margin-right:50px;margin-left:50px;background-color:#f8f8f8;border:1px solid #ccc;box-shadow:0 1px 1px rgba(0,0,0,.05);border-radius:4px;">
-        <div style="display:flex">
-            <p style="margin-left:10px;margin-right:20px;font-size:40px">Temps restant : </p><strong style="font-size:40px" id="minuteur"></strong>
+    <div class="bg-white">
+        <div class="mx-auto text">
+           <p class=" text-6xl text-center" id="minuteur"></p>
         </div>
     </div>
     <table class="container">
@@ -42,7 +54,7 @@
 
     </div>
     <div style="margin-top:75px;align-items:center;justify-content:center;display:flex">
-        <a style="background-color:blue;color:white;font-size:30px;padding-top:10px;padding-bottom:10px;padding-left:20px;padding-right:20px;border-radius:15px;cursor:pointer;" href="index.php?uc=enigme&action=afficherEnigmes">Retour</a>
+        <a style="background-color:blue;color:white;font-size:30px;padding-top:10px;padding-bottom:10px;padding-left:20px;padding-right:20px;border-radius:15px;cursor:pointer;" href="choixPartie.php">Retour</a>
 
     </div>
 
@@ -54,7 +66,7 @@
             $.ajax({
                 type: "GET",
                 url: "ajax/ajax.php",
-                data: "action=tabScore",
+                data: "action=tabScore&numSession=" + $('#numSession').val(),
                 dataType: "json",
                 success: function(response) {
                     console.log(response.minuteur.time);
@@ -79,7 +91,7 @@
                         }
                         body += '<tr style="background-color:' + color + ';font-size:25px" >';
                         body += '<td > #' + (i + 1) + '</td>';
-                        body += '<td>' + response.partie[i].equipe + '</td>';
+                        body += '<td>' + response.partie[i].login + '</td>';
                         body += '<td>' + image + '</td>';
                         body += '<td>' + response.partie[i].score + '</td>';
                         body += '</tr>';
