@@ -39,18 +39,18 @@
 
             </div>
             <div class="h-8 md:hidden">
-
+                
             </div>
             <div class="md:w-1/2 mx-4">
 
-        <input class="rounded-full w-full bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 " type="submit" value="Tableau des scores">
+        <button class="rounded-full w-full bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 " type="button" onclick="window.location.href='choixPartie.php'">Tableau des scores</button>
             </div>
 
         </div>
     </div>
     <div>
-        <div class="h-full  w-full overflow-hidden bg-red-500 hidden md:block">
-            <img src="images/connexion.jpg" alt="" srcset="">
+        <div class="h-full  my-8 w-full overflow-hidden  hidden md:block">
+            <img class="w-full h-2/3 bg-white" src="images/login.svg" alt="" srcset="">
         </div>
     </div>
 </div>
