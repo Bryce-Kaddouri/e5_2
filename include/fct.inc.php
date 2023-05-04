@@ -32,10 +32,11 @@ function deconnecter()
  * @param $id 
  * @param $nom
  */
-function connecter($id, $nom)
+function connecter($id, $nom, $numSession)
 {
     $_SESSION['id'] = $id;
     $_SESSION['login'] = $nom;
+    $_SESSION['numSession'] = $numSession;
 
 }
 

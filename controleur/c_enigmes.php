@@ -11,12 +11,20 @@ if (!isset($_REQUEST['action'])) {
 $action = $_REQUEST['action'];
 switch ($action) {
     case 'afficherEnigmes': {
+
             // $idPartie = $pdo->
             include("vues/v_profile.php");
             $niveaux = $pdo->getNiveau();
             include("vues/v_difficulte.php");
-            $enigmes = $pdo->getEnigmes();
+            $idEquipe = $_SESSION['id'];
+            $numSession = $_SESSION['numSession'];
+
+            echo "test" .  $numSession;
+            break;
+
+            $enigmes = $pdo->getEnigmes($numSession, $idEquipe);
             $enigmesNonRes = $pdo->getEnigmesNonResolue();
+            
             
             include("vues/v_enigmes.php");
             break;
@@ -30,7 +38,7 @@ switch ($action) {
 
 
             include("vues/v_difficulte.php");
-            // $idPartie = $pdo->getIdPartie($_SESSION['id']);
+            $idPartie = $pdo->getIdPartie($_SESSION['id']);
             $idPartie = 1;
             $enigme = $pdo->getUneEnigme($numChallenge);
 

@@ -20,6 +20,7 @@ switch ($action) {
             }
 
             $equipe = $pdo->getInfosEquipe($login, $mdp);
+            
             $ip = $_SERVER['REMOTE_ADDR'];
             if($ip == '::1'){
                 $ip = '127.0.0.1';
@@ -37,7 +38,16 @@ switch ($action) {
                  
                 $id = $equipe['equipeID'];
                 $nom = $equipe['login'];
-                connecter($id, $nom);
+                // echo $nom;
+                //  echo $numSession;
+
+                $numSession = $pdo->getNumSessionByIdEquipe($id);
+
+                echo 'test' . $numSession;
+
+
+                
+                connecter($id, $nom, 1);
                 $pdo->writeLog($id, 'Test de connexion : Connexion réussie', $ip);
 
                 header('Location: index.php?uc=enigme&action=afficherEnigmes');

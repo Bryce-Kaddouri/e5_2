@@ -105,13 +105,13 @@ class PdoCtf
         }
     }
 
-    public function getEnigmes()
+    public function getEnigmes($numSession, $idEquipe)
     {
         // tout sauf le mot de passe et le flag
         $req = "SELECT numEnigme, libelle, url, niveau, thematique, contenu, nbPoints 
                     FROM enigme 
-                    where numEnigme IN (SELECT noEnigme from concerner where noSession = 1) 
-                    AND numEnigme NOT IN (SELECT noEnigme from validation where idEquipe = 1)
+                    where numEnigme IN (SELECT noEnigme from concerner where noSession = $numSession) 
+                    AND numEnigme NOT IN (SELECT noEnigme from validation where idEquipe = $idEquipe)
                     ORDER BY numEnigme;";
         $rs = PdoCtf::$monPdo->query($req);
         $lignes = $rs->fetchAll();
@@ -196,5 +196,12 @@ class PdoCtf
         return true;
 
 
+    }
+
+    public function getNumSessionByIdEquipe($idEquipe){
+        $req = "Select MAX(numSession) as numSession from session where idEquipe = :idEquipe;";
+        $req->execute([':idEquipe' => $idEquipe]);
+        $ligne = $req->fetch();
+        return $ligne['numSession'];
     }
 }
