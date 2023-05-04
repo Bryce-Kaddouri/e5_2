@@ -4,7 +4,7 @@
 
 switch ($_REQUEST['action']) {
     case 'choixPartie':{
-        $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '');
+        $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '12-Soleil&');
         $sql = "SELECT Distinct numSession,  dateDebut, dateFin FROM session group by numSession;";
         $res = $pdo->query($sql);
         $lignes = $res->fetchAll();
@@ -14,7 +14,7 @@ switch ($_REQUEST['action']) {
     }
     case 'getEquipeByPartie': {
             $numSession = $_REQUEST['numSession'];
-            $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '');
+            $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '12-Soleil&');
             $sql = "SELECT equipeID, libelle, login FROM equipe WHERE equipe.equipeID in (Select idEquipe from session where numSession = :numSession);";
             $sql = $pdo->prepare($sql);
             $res = $sql->execute(['numSession' => $numSession]);
@@ -32,7 +32,7 @@ switch ($_REQUEST['action']) {
             $interval = $date1->diff($date2);
             $minuteur =   $interval->format('%H:%I:%S');
 
-            $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '');
+            $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '12-Soleil&');
 
             $sql = "select  * from infotabscore where numSession = :numSession order by score DESC;";
             // requete préparée
@@ -50,7 +50,7 @@ switch ($_REQUEST['action']) {
     case 'testFlag': {
             $flag = $_REQUEST['flag'];
             $numCHallenge = $_REQUEST['numChallenge'];
-            $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '');
+            $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '12-Soleil&');
             $sql = "SELECT flag from enigme where numEnigme=:numChallenge;";
             // requete préparée 
             $sql = $pdo->prepare($sql);
@@ -70,7 +70,7 @@ switch ($_REQUEST['action']) {
             $idEquipe = $_REQUEST['idEquipe'];
             $numPartie = $_REQUEST['idPartie'];
 
-            $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '');
+            $pdo = new PDO('mysql:host=localhost;dbname=hackathon_v2', 'root', '12-Soleil&');
 
 
             $sql = "INSERT INTO `validation`(`noEnigme`, `idEquipe`) VALUES (:numChallenge, :idEquipe);";
@@ -87,7 +87,7 @@ switch ($_REQUEST['action']) {
         }
 
     default: {
-            // include("vues/v_connexion.php");
-            // break;
+             include("vues/v_connexion.php");
+             break;
         }
 }

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,10 +24,6 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="apple-mobile-web-app-title" content="Hackathon 2022" />
   <meta name="application-name" content="Hackathon 2022" />
-  <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" href="images/icons/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="images/icons/favicon-16x16.png" sizes="16x16" />
-  <link rel="manifest" href="manifest.json" />
   <style>
     @media screen and (display-mode: standalone) {
       header {

@@ -29,20 +29,5 @@
         
         
     </div>
-<!-- 
-<div class="droit">
-            <nav>
-                <label for="btn" class="button">Enigmes
-                <span class="fas fa-caret-down"></span>
-                </label>
-                <input type="checkbox" id="btn">
-               
-                <ul class="menu">
-                <div class="scroller">
-                  
-                </div>
-                
-                </ul>
-             </nav>
-        </div>  
-    <a href="" class="containboutton"><p class="textretour">Retour</p></a> -->
+
+   

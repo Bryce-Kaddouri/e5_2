@@ -7,7 +7,7 @@ class PdoCtf
     private static $serveur = 'mysql:host=localhost';
     private static $bdd = 'dbname=hackathon_v2';
     private static $user = 'root';
-    private static $mdp = '';
+    private static $mdp = '12-Soleil&';
     private static $monPdo;
     private static $monPdoCtf = null;
 
@@ -56,22 +56,6 @@ class PdoCtf
         return $ligne;
     }
 
-    /**
-     * Retourne les informations d'une équipe
-     * @param $login
-     * @param $mdp
-     * @return l'id, le libelle et le login sous la forme d'un tableau associatif 
-     */
-    public function getInfosProfesseur($login, $mdp)
-    {
-        $req = "SELECT id, nom, prenom, login  
-                    FROM professeurs 
-                    WHERE login=:login AND mdp=SHA2(:mdp, 512);";
-        $req = PdoCtf::$monPdo->prepare($req);
-        $req->execute([':login' => $login, ':mdp' => $mdp]);
-        $ligne = $req->fetch();
-        return $ligne;
-    }
 
     /**
      * Retourne les informations d'une enigme
@@ -169,7 +153,7 @@ class PdoCtf
         return $ligne;
     }
 
-    public function getIdPartie($idEquipe)
+    public function getIdPartieByEquipe($idEquipe)
     {
         // recuperation de la session en cours avec la date la plus récente
 
@@ -192,25 +176,16 @@ class PdoCtf
 
     public function writeLog($idEquipe, $action, $ip)
     {
-        // verif int $idEquipe
-        // verif string $action
-        // verif regex $ip
-        if(!is_int($idEquipe)){
-            throw new Exception("idEquipe n'est pas un entier");
+       
+        if(!preg_match("/^([0-9]{1,3}\.){3}[0-9]{1,3}$/", $ip)){
+            return false;
         }
-        if(!is_string($action)){
-            throw new Exception("action n'est pas une chaine de caractère");
-        }
-        // // contient 3x une chaine avec ce format : "[0-9][0-9]?[0-9]?."
-        // // et finit par une chaine avec ce format : "[0-9][0-9]?[0-9]?"
-        // // ex : 127.0.0.1
-        // if(!preg_match("/^([0-9]{1,3}\.){3}[0-9]{1,3}$/", $ip)){
-        //     throw new Exception("ip n'est pas une adresse ip");
-        // }
+      
 
+        // error_log('test');
 
         $sql = "call writeLogs(:idEquipe, :action, :ip);";
-        // echo "writeLogs(1, ".$action.", ".$ip.");";
+        // // echo "writeLogs(1, ".$action.", ".$ip.");";
         $req = PdoCtf::$monPdo->prepare($sql);
         $req->bindParam(':idEquipe', $idEquipe, PDO::PARAM_INT);
         $req->bindParam(':action', $action, PDO::PARAM_STR);

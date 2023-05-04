@@ -11,6 +11,7 @@ if (!isset($_REQUEST['action'])) {
 $action = $_REQUEST['action'];
 switch ($action) {
     case 'afficherEnigmes': {
+            // $idPartie = $pdo->
             include("vues/v_profile.php");
             $niveaux = $pdo->getNiveau();
             include("vues/v_difficulte.php");

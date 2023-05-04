@@ -1,0 +1,1237 @@
+[2023-04-11 17:32:10] glpiphplog.WARNING: Test logger  
+[2023-04-18 07:51:08] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types" used in "PluginOcsinventoryngOcsServer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:121               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:08] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngNotimportedcomputer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:128               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:08] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngRuleImportEntity" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:133               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:08] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngDetail" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:138               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:23] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types" used in "PluginOcsinventoryngOcsServer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:121               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:23] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngNotimportedcomputer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:128               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:23] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngRuleImportEntity" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:133               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:23] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngDetail" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:138               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:27] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types" used in "PluginOcsinventoryngOcsServer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:121               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:27] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngNotimportedcomputer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:128               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:27] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngRuleImportEntity" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:133               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:27] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngDetail" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:138               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:35] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types" used in "PluginOcsinventoryngOcsServer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:121               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:35] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngNotimportedcomputer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:128               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:35] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngRuleImportEntity" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:133               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:35] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngDetail" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:138               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:48] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types" used in "PluginOcsinventoryngOcsServer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:121               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:48] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngNotimportedcomputer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:128               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:48] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngRuleImportEntity" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:133               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:48] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngDetail" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:138               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:53] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types" used in "PluginOcsinventoryngOcsServer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:121               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:53] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngNotimportedcomputer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:128               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:53] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngRuleImportEntity" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:133               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:51:53] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngDetail" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:138               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types" used in "PluginOcsinventoryngOcsServer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:121               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:835                                 Plugin::load()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngNotimportedcomputer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:128               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:835                                 Plugin::load()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngRuleImportEntity" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:133               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:835                                 Plugin::load()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngDetail" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:138               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:835                                 Plugin::load()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8_unicode_ci" charset/collation detected, should be "utf8mb4_unicode_ci" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_ocsadmininfoslinks`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8_unicode_ci" charset/collation detected, should be "utf8mb4_unicode_ci" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_ocslinks`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8_unicode_ci" charset/collation detected, should be "utf8mb4_unicode_ci" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_ocsservers`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8_unicode_ci" charset/collation detected, should be "utf8mb4_unicode_ci" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_registrykeys`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_winupdates`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8_unicode_ci" charset/collation detected, should be "utf8mb4_unicode_ci" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_osinstalls`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8_unicode_ci" charset/collation detected, should be "utf8mb4_unicode_ci" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_proxysettings`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8_unicode_ci" charset/collation detected, should be "utf8mb4_unicode_ci" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_networkshares`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8_unicode_ci" charset/collation detected, should be "utf8mb4_unicode_ci" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_winusers`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_teamviewers`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8_unicode_ci" charset/collation detected, should be "utf8mb4_unicode_ci" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_networkports`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8_unicode_ci" charset/collation detected, should be "utf8mb4_unicode_ci" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_networkporttypes`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_ocsservers_profiles`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_threads`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_configs`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_details`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_notimportedcomputers`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_servers`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8_unicode_ci" charset/collation detected, should be "utf8mb4_unicode_ci" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_snmpocslinks`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8_unicode_ci" charset/collation detected, should be "utf8mb4_unicode_ci" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_ipdiscoverocslinks`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_ruleimportentities`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_runningprocesses`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_services`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_ocsalerts`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_notificationstates`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_customapps`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of "utf8" charset/collation detected, should be "utf8mb4" in /var/www/glpi/src/DBmysql.php at line 2003
+  Backtrace :
+  src/DBmysql.php:2003                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:04] glpiphplog.WARNING:   *** PHP User Warning (512): Usage of signed integers in primary or foreign keys is discouraged, please use unsigned integers instead in `glpi_plugin_ocsinventoryng_bitlockerstatuses`.`id`. in /var/www/glpi/src/DBmysql.php at line 2041
+  Backtrace :
+  src/DBmysql.php:2041                               trigger_error()
+  src/DBmysql.php:361                                DBmysql->checkForDeprecatedTableOptions()
+  src/DBmysql.php:1010                               DBmysql->query()
+  plugins/ocsinventoryng/hook.php:45                 DBmysql->runFile()
+  src/Plugin.php:840                                 plugin_ocsinventoryng_install()
+  src/Plugin.php:2818                                Plugin->install()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:05] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types" used in "PluginOcsinventoryngOcsServer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:121               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:52:05] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngNotimportedcomputer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:128               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:52:05] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngRuleImportEntity" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:133               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:52:05] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngDetail" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:138               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:52:24] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types" used in "PluginOcsinventoryngOcsServer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:121               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:898                                 Plugin::load()
+  src/Plugin.php:2848                                Plugin->activate()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:24] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngNotimportedcomputer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:128               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:898                                 Plugin::load()
+  src/Plugin.php:2848                                Plugin->activate()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:24] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngRuleImportEntity" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:133               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:898                                 Plugin::load()
+  src/Plugin.php:2848                                Plugin->activate()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:24] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngDetail" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:138               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:898                                 Plugin::load()
+  src/Plugin.php:2848                                Plugin->activate()
+  src/MassiveAction.php:1408                         Plugin::processMassiveActionsForOneItemtype()
+  src/MassiveAction.php:1386                         MassiveAction->processForSeveralItemtypes()
+  front/massiveaction.php:59                         MassiveAction->process()
+  
+[2023-04-18 07:52:24] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types" used in "PluginOcsinventoryngOcsServer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:121               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:52:24] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngNotimportedcomputer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:128               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:52:24] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngRuleImportEntity" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:133               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:52:24] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngDetail" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:138               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:52:34] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types" used in "PluginOcsinventoryngOcsServer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:121               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:776                                 Plugin::load()
+  front/plugin.form.php:60                           Plugin->uninstall()
+  
+[2023-04-18 07:52:34] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngNotimportedcomputer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:128               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:776                                 Plugin::load()
+  front/plugin.form.php:60                           Plugin->uninstall()
+  
+[2023-04-18 07:52:34] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngRuleImportEntity" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:133               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:776                                 Plugin::load()
+  front/plugin.form.php:60                           Plugin->uninstall()
+  
+[2023-04-18 07:52:34] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngDetail" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:138               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:776                                 Plugin::load()
+  front/plugin.form.php:60                           Plugin->uninstall()
+  
+[2023-04-18 07:52:34] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types" used in "PluginOcsinventoryngOcsServer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:121               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:52:34] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngNotimportedcomputer" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:128               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:52:34] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngRuleImportEntity" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:133               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  
+[2023-04-18 07:52:34] glpiphplog.WARNING:   *** PHP User Warning (512): Unknown attributes "massiveaction_noupdate_types", "massiveaction_nodelete_types" used in "PluginOcsinventoryngDetail" class registration in /var/www/glpi/src/Plugin.php at line 1490
+  Backtrace :
+  src/Plugin.php:1490                                trigger_error()
+  plugins/ocsinventoryng/setup.php:138               Plugin::registerClass()
+  src/Plugin.php:300                                 plugin_init_ocsinventoryng()
+  src/Plugin.php:2602                                Plugin::load()
+  src/Search.php:7451                                Plugin::getSpecificValueToDisplay()
+  src/Search.php:1701                                Search::giveItem()
+  src/Search.php:448                                 Search::constructData()
+  src/Search.php:200                                 Search::getDatas()
+  src/Search.php:177                                 Search::showList()
+  front/plugin.php:56                                Search::show()
+  

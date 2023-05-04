@@ -18,8 +18,8 @@
         <h1 class="text-2xl md:text-4xl lg:text-6xl py-4 text-center">Choisir une partie</h1>
     </div>
    <div class="bg-white w-auto mx-4 p-4 md:flex">
-    <p>Selctionner une partie :</p>
-    <select name="numSession" id="numSession">
+    <p class="mr-4">Selctionner une partie :</p>
+    <select  class="border-2 border-gray-900 w-48" name="numSession" id="numSession">
         <option value="">Choisir une partie</option>
     </select>
    </div>
@@ -90,7 +90,7 @@
         });
 
         $('#btnTab').on('click', function () {
-            window.location.href = "tabScore.php.?numSession="+$('#numSession').val();
+            window.location.href = "tabScore.php?numSession="+$('#numSession').val();
         });
     });
    </script>

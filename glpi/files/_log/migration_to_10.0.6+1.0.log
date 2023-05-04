@@ -1,0 +1,11 @@
+2023-04-18 07:51:17 [2@deb1]
+0 seconde for "Installation of plugin FusionInventory" @ 2023-04-18 07:51:17 [2@deb1]
+0 seconde for "Clean data from old installation of the plugin" @ 2023-04-18 07:51:17 [2@deb1]
+0 seconde for "Clean rules from old installation of the plugin" @ 2023-04-18 07:51:18 [2@deb1]
+1 seconde for "Creation tables in database" @ 2023-04-18 07:51:18 [2@deb1]
+0 seconde for "Creation of folders" @ 2023-04-18 07:51:19 [2@deb1]
+1 seconde for "Initialize profiles" @ 2023-04-18 07:51:19 [2@deb1]
+0 seconde for "Initialize configuration" @ 2023-04-18 07:51:19 [2@deb1]
+0 seconde for "Initialize agent TASKS" @ 2023-04-18 07:51:19 [2@deb1]
+0 seconde for "Initialize cron task" @ 2023-04-18 07:51:21 [2@deb1]
+2 secondes for "Create rules" @ 

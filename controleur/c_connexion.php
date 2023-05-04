@@ -1,10 +1,6 @@
 <?php
 
-/**
- * Application CTF Hackathon 2022
- * BTS SIO
- * Lycée de Bellepierre
- */
+
 if (!isset($_REQUEST['action'])) {
     $_REQUEST['action'] = 'demandeConnexion';
 }
@@ -29,7 +25,7 @@ switch ($action) {
                 $ip = '127.0.0.1';
             }
 
-        ;
+      
             if (!is_array($equipe)) {
                 // ip de l'utilisateur
                 $pdo->writeLog(0, 'Test de connexion : Connexion écouhée', $ip);
@@ -38,15 +34,21 @@ switch ($action) {
                 include("vues/v_connexion.php");
                 break;
             } else {
+                 
                 $id = $equipe['equipeID'];
                 $nom = $equipe['login'];
-                $pdo->writeLog($id, 'Test de connexion : Connexion réussie', $ip);
                 connecter($id, $nom);
-                // $_SESSION['idPartie'] = $pdo->getIdPartie();
+                $pdo->writeLog($id, 'Test de connexion : Connexion réussie', $ip);
+
                 header('Location: index.php?uc=enigme&action=afficherEnigmes');
                 break;
             }
             
+        }
+        case 'logout':{
+            session_destroy();
+            header('index.php?uc=connexion&action=demandeConnexion');
+
         }
     default: {
         include("vues/v_connexion.php");

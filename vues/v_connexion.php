@@ -35,7 +35,7 @@
         </div>
         <div class="block md:flex py-8">
             <div class="md:w-1/2 mx-4">
-            <input class="rounded-full w-full bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 " type="submit" value="Connexion">
+            <input class="rounded-full w-full bg-blue-600 hover:bg-blue-700 text-white px-5 py-2" type="submit" value="Connexion">
 
             </div>
             <div class="h-8 md:hidden">
